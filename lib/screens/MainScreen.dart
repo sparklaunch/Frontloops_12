@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 
 import "package:frontloops_12/components/Header.dart";
+import "package:frontloops_12/components/Middle.dart";
 
 class MainScreen extends StatelessWidget {
   static const String route = "/";
@@ -54,6 +55,7 @@ class MainScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Header(),
+              Middle(),
             ],
           ),
         ),
