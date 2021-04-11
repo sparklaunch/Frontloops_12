@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import "package:frontloops_12/utilities/constants.dart";
+
 import "package:frontloops_12/components/VerticalLine.dart";
 import "package:frontloops_12/components/Routine.dart";
 
@@ -7,10 +9,8 @@ class Middle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromRGBO(85, 72, 116, 1),
-      padding: EdgeInsets.symmetric(
-        horizontal: 30.0,
-      ),
+      color: kMiddleBackgroundColor,
+      padding: kUniversalPadding,
       child: Column(
         children: [
           VerticalLine(
