@@ -8,6 +8,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -42,8 +43,15 @@ class MainScreen extends StatelessWidget {
               stops: [0, 1],
               tileMode: TileMode.clamp,
             ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black45,
+                blurRadius: 30.0,
+              ),
+            ],
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Header(),
             ],
